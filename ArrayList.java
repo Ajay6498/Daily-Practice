@@ -25,6 +25,12 @@ public class ArrayList {
               ll.sort(Comparator.naturalOrder());
               System.out.println(ll);
 
+             List<Integer> l= ll.subList(2, 4);
+
+             System.out.println(l);
+
+
+
               
 
 
