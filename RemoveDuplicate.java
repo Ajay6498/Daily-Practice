@@ -1,5 +1,7 @@
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 public class RemoveDuplicate {
     public static void main(String[] args) {
@@ -18,7 +20,15 @@ public class RemoveDuplicate {
         }
         System.out.println(sb);
         /* ************************************************************* */
+        String str2 = "ajay";
 
-         
+        String output = Arrays.asList(str2.split(""))
+                .stream()
+                .distinct()
+                .collect(Collectors.joining());
+
+        System.out.println("Original String : " + str2);
+        System.out.println("After removing the duplicates : " + output);
+
     }
 }
